@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="344.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ListView fx:id="employeeListView" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <HBox fillHeight="false">
+               <children>
+                  <Label prefWidth="75.0" text="First Name" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="fNameField" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox fillHeight="false" layoutX="10.0" layoutY="10.0">
+               <children>
+                  <Label prefWidth="75.0" text="Last Name" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="lNameField" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox fillHeight="false" layoutX="10.0" layoutY="10.0">
+               <children>
+                  <Label prefWidth="75.0" text="Is Active" HBox.hgrow="ALWAYS" />
+                  <CheckBox fx:id="isActiveCheck" mnemonicParsing="false" />
+               </children>
+            </HBox>
+            <HBox fillHeight="false" layoutX="10.0" layoutY="10.0">
+               <children>
+                  <Label prefWidth="75.0" text="Misc." HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="misc" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </children></VBox>
+   </children>
+</HBox>
